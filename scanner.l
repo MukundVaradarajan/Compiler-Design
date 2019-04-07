@@ -1,4 +1,6 @@
+%{
 #include "y.tab.h"
+%}
 
 %%
 
