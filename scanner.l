@@ -6,7 +6,9 @@
 
 [\t\n] ;
 
-"{".*"}" return BLOCK;
+"{" return OFB;
+
+"}" return CFB;
 
 if"(".*")" return IF;
 
