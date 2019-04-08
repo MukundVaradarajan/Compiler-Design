@@ -6,17 +6,11 @@
 
 [\t\n] ;
 
-"{" return OFB;
+"{".*"}" return BLOCK;
 
-"}" return CFB;
+if"(".*")" return IF;
 
-"(" return ORB;
-
-")" return CRB;
-
-if return IF;
-
-"else if" return ELIF;
+"else if(".*")" return ELIF;
 
 else return ELSE;
 
