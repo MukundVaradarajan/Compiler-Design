@@ -28,6 +28,7 @@ elifExpr: elifExpr ELIF OFB ifExpr CFB
 		
 elseExpr: ELSE OFB ifExpr CFB
 		| ELSE OFB CFB
+		| ELSE
 	  
 
 %%
