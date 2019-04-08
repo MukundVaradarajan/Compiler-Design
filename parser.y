@@ -17,7 +17,6 @@ condExpr: ifExpr						{ max_depth = max_depth < cur_depth ? cur_depth : max_dept
 ifExpr: IF OFB ifExpr CFB elExpr		{ cur_depth++; }
 	  | IF OFB CFB elExpr
 	  | IF elExpr
-	  | IF								
 	  ;
 
 elExpr: elifExpr elseExpr
